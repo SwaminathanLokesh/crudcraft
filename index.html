@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <table class="list" id="storeList">
+        <thead>
+            <tr>
+                <th>Product Code</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Product Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <form autocomplete="off" onsubmit="onFormSubmit(event)">
+        <div>
+            <label for="ProductCode">Product Code</label>
+            <input type="text" name="ProductCode" id="ProductCode">
+        </div>
+        <div>
+            <label for="ProductName">Product name</label>
+            <input type="text" name="ProductName" id="ProductName">
+        </div>
+        <div>
+            <label for="Quantity">Quantity</label>
+            <input type="number" name="Quantity" id="Quantity">
+        </div>
+        <div>
+            <label for="ProductPrice">Product Price</label>
+            <input type="number" name="ProductPrice" id="ProductPrice">
+        </div>
+        <div class="form_action--button">
+            <input type="submit" name="submit">
+            <input type="reset" name="reset">
+        </div>
+    </form>
+</body>
+</html>
